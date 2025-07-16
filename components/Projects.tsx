@@ -35,6 +35,7 @@ function Projects({ projects }: Props) {
                             alt="Description"
                             width={500}
                             height={300}
+                            className='rounded-md'
                         />
                         <div className='flex items-center justify-center space-x-5  '>
                             {project?.technologies.map((tech) => (
