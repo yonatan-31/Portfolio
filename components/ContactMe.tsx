@@ -22,28 +22,28 @@ function ContactMe() {
     }
 
     return (
-        <div className='relative h-screen flex flex-col items-center justify-evenly  '>
+        <div className='relative h-screen flex flex-col items-center justify-evenly px-[200px]'>
 
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Contact</h3>
 
-            <div className='flex flex-col justify-between space-y-12'>
-                <h4 className='md:text-4xl text-3xl font-semibold text-center'>I have got just what you need. <span className='decoration-[#F7AB0A]/50 underline'>Let’s Talk</span></h4>
+            <div className='flex flex-col justify-between space-y-12 '>
+                <h4 className='md:text-3xl text-2xl font-semibold text-center'>I have got just what you need. <span className='decoration-[#F7AB0A]/50 underline'>Let’s Talk</span></h4>
 
 
                 <div className='space-y-5 mb-5'>
                     <div className='flex items-center space-x-5 justify-center'>
-                        <PhoneIcon className='text-[#F7AB0A] h-7 w-7 ' />
-                        <p className='text-2xl'>0902354089</p>
+                        <PhoneIcon className='text-[#F7AB0A] h-5 w-5 md:h-7 md:w-7 ' />
+                        <p className='text-xl md:text-2xl'>0902354089</p>
                     </div>
 
                     <div className='flex items-center space-x-5 justify-center'>
-                        <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pluse' />
-                        <p className='text-2xl'>yonatanasmare31@gmail.com</p>
+                        <EnvelopeIcon className='text-[#F7AB0A] h-5 w-5 md:h-7 md:w-7 animate-pluse' />
+                        <p className='text-xl md:text-2xl'>yonatanasmare31@gmail.com</p>
                     </div>
 
                     <div className='flex items-center space-x-5 justify-center'>
-                        <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pluse' />
-                        <p className='text-2xl'>Addis Ababa Ethiopia</p>
+                        <MapPinIcon className='text-[#F7AB0A] h-5 w-5 md:h-7 md:w-7 animate-pluse' />
+                        <p className='text-xl md:text-2xl'>Addis Ababa Ethiopia</p>
                     </div>
 
 
@@ -56,7 +56,7 @@ function ContactMe() {
 
                         <input {...register("Subject")} placeholder="Subject" className="contactInput" type='text' />
                         <textarea  {...register("Message")} placeholder="Message" className="contactInput" />
-                        <button type="submit" className='bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg'>submit</button>
+                        <button type="submit" className='bg-[#F7AB0A] py-3 px-8 md:py-5 md:px-10 rounded-md text-black font-bold text-lg'>submit</button>
                     </form>
                 </div>
             </div>

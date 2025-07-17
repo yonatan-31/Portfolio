@@ -32,23 +32,23 @@ function Hero({pageInfo}: Props) {
                 className='rounded-full h-35 w-35 mx-auto object-cover shadow-[0_0_8px_#F7AB0A]'
             />
             <div className='z-20'>
-                <h2 className='text-sm uppercase text-[#F7AB0A]/80 pb-2 tracking-[15px] font-semibold'>{pageInfo?.role}</h2>
-                <h1 className='text-5xl lg:text-6xl font-semibold  px-10 mb-5 z-40'>
+                <h2 className='text-sm  uppercase text-[#F7AB0A]/80 pb-2 sm:tracking-[15px] tracking-[10px] font-semibold'>{pageInfo?.role}</h2>
+                <h1 className='text-3xl md:text-5xl lg:text-6xl font-semibold  px-10 mb-5 z-40'>
                     <span>{text}</span>
                     <Cursor cursorColor="#F7AB0A" />
                 </h1>
-                <div>
+                <div className='mt-30 md:mt-0'>
                     <Link href="#about">
-                    <button className='heroButton'>About</button>
+                    <button className='heroButton md:text-lg'>About</button>
                     </Link>
                     {/* <Link href="#experience">
                     <button className='heroButton'>Experience</button>
                     </Link> */}
-                    <Link href="#skill">
-                    <button className='heroButton'>Skill</button>
+                    <Link href="#skills">
+                    <button className='heroButton md:text-lg'>Skill</button>
                     </Link>
                     <Link href="#projects">
-                    <button className='heroButton'>Projects</button>
+                    <button className='heroButton md:text-lg'>Projects</button>
                     </Link>
                 </div>
             </div>

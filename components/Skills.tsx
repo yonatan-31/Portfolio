@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'
+import React, { useEffect, useState }  from 'react'
 import Skill from './Skill'
 import { motion } from 'framer-motion';
 import type { Skill as SkillType } from '@/typings'; // TypeScript type with alias
@@ -9,24 +9,40 @@ type Props = {
 };
 
 function Skills({ skills }: Props) {
+    const [directionThreshold, setDirectionThreshold] = useState(8);
+    useEffect(() => {
+        const updateThreshold = () => {
+            const width = window.innerWidth;
+            if (width < 640) {
+                setDirectionThreshold(6); // 3 columns
+            } else {
+                setDirectionThreshold(8); // 4 columns
+            }
+        };
+
+        updateThreshold(); // Initial check
+        window.addEventListener('resize', updateThreshold);
+
+        return () => window.removeEventListener('resize', updateThreshold);
+    }, []);
     return (
         <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className='relative min-h-screen text-center flex justify-center items-center flex-col  xl:flex-row max-w-[2000px] xl:px-10 '>
+            className='relative min-h-screen text-center flex justify-center items-center flex-col  max-w-[2000px] xl:px-10 '>
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Skills</h3>
 
             <h2 className='uppercase absolute top-36 text-gray-500 text-sm tracking-[3px] mt-2'>Hover over a skill for current profieciency</h2>
 
-            <div className='grid grid-cols-4 gap-5 '>
+            <div className='grid grid-cols-3 sm:grid-cols-4 gap-5 px-4 min-w-[300px]'>
                 {skills.map((skill, i) => (
                     <Skill
                         key={skill?._id}
-                        directionLeft={i < 8}
-                        skill={skill} />
+                        directionLeft={i < directionThreshold}
+                        skill={skill}
+                    />
                 ))}
-
             </div>
 
 
