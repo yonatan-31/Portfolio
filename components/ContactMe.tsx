@@ -24,7 +24,7 @@ function ContactMe() {
     return (
         <div className='relative h-screen flex flex-col items-center justify-evenly px-[200px]'>
 
-            <h3 className='absolute top-24 uppercase tracking-[15px] sm:tracking-[20px] text-gray-500 text-2xl'>Contact</h3>
+            <h3 className=' top-24 uppercase tracking-[15px] sm:tracking-[20px] text-gray-500 text-2xl'>Contact</h3>
 
             <div className='flex flex-col justify-between space-y-12 '>
                 <h4 className='text-xl md:text-3xl sm:text-2xl font-semibold text-center'>I have got just what you need. <span className='decoration-[#F7AB0A]/50 underline'>Let’s Talk</span></h4>
