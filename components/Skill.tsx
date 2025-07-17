@@ -25,7 +25,7 @@ function Skill({ directionLeft, skill }: Props) {
                 x: 0,
                 opacity: 1,
             }}
-            className='group relative flex cursor-pointer '>
+            className='group relative flex cursor-pointer mx-auto '>
             <Image
                 src={urlFor(skill?.image).url()}
                 alt="Description"
