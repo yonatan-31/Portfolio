@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState }  from 'react'
+import React, { useEffect, useState } from 'react'
 import Skill from './Skill'
 import { motion } from 'framer-motion';
 import type { Skill as SkillType } from '@/typings'; // TypeScript type with alias
@@ -30,12 +30,16 @@ function Skills({ skills }: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className='relative min-h-screen text-center flex justify-center items-center flex-col  max-w-[2000px] xl:px-10 '>
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Skills</h3>
-
-            <h2 className='uppercase absolute top-36 text-gray-500 text-sm tracking-[3px] mt-2'>Hover over a skill for current profieciency</h2>
-
-            <div className='grid grid-cols-3 sm:grid-cols-4 gap-5 px-4 min-w-[300px]'>
+            className="relative min-h-screen max-w-[2000px] mx-auto px-4 sm:px-8 xl:px-10 flex flex-col items-center justify-center text-center"
+        >
+            <div className="-mt-20 mb-10">
+                <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">Skills</h3>
+                <h2 className="uppercase text-gray-500 text-sm tracking-[3px] mt-2">
+                    Hover over a skill for current proficiency
+                </h2>
+            </div>
+   
+            <div className="grid grid-cols-3 sm:grid-cols-4 gap-5 px-4 sm:px-10 w-full max-w-5xl">
                 {skills.map((skill, i) => (
                     <Skill
                         key={skill?._id}
@@ -44,9 +48,8 @@ function Skills({ skills }: Props) {
                     />
                 ))}
             </div>
-
-
         </motion.div>
+
     )
 }
 

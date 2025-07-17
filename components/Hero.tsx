@@ -33,7 +33,7 @@ function Hero({pageInfo}: Props) {
             />
             <div className='z-20'>
                 <h2 className='text-sm  uppercase text-[#F7AB0A]/80 pb-2 sm:tracking-[15px] tracking-[10px] font-semibold'>{pageInfo?.role}</h2>
-                <h1 className='text-3xl md:text-5xl lg:text-6xl font-semibold  px-10 mb-5 z-40'>
+                <h1 className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold  px-10 mb-5 z-40'>
                     <span>{text}</span>
                     <Cursor cursorColor="#F7AB0A" />
                 </h1>

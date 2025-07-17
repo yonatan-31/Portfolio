@@ -24,10 +24,10 @@ function ContactMe() {
     return (
         <div className='relative h-screen flex flex-col items-center justify-evenly px-[200px]'>
 
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Contact</h3>
+            <h3 className='absolute top-24 uppercase tracking-[15px] sm:tracking-[20px] text-gray-500 text-2xl'>Contact</h3>
 
             <div className='flex flex-col justify-between space-y-12 '>
-                <h4 className='md:text-3xl text-2xl font-semibold text-center'>I have got just what you need. <span className='decoration-[#F7AB0A]/50 underline'>Let’s Talk</span></h4>
+                <h4 className='text-xl md:text-3xl sm:text-2xl font-semibold text-center'>I have got just what you need. <span className='decoration-[#F7AB0A]/50 underline'>Let’s Talk</span></h4>
 
 
                 <div className='space-y-5 mb-5'>
@@ -48,8 +48,8 @@ function ContactMe() {
 
 
 
-                    <form onSubmit={handleSubmit(onSubmit)} className=' flex flex-col space-y-2 w-fit mx-auto mt-10 -mb-10'>
-                        <div className='flex space-x-2'>
+                    <form onSubmit={handleSubmit(onSubmit)} className=' flex flex-col space-y-2  w-[80%] mx-auto mt-10 -mb-10'>
+                        <div className='flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0'>
                             <input  {...register("Name")} placeholder="Name" className="contactInput" type="text" />
                             <input  {...register("Email")} placeholder="Email" className="contactInput" type="email" />
                         </div>

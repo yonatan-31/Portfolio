@@ -37,10 +37,10 @@ export default function About({pageInfo}: Props) {
                 alt="Description"
                 width={500}
                 height={300}
-                className=' sm:mb-0 mt-20 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]'
+                className=' sm:mb-0 -mt-10 sm:mt-20 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]'
             />
-            <div className='space-y-10 px-0 md:px-10 -mt-20 md:mt-0'>
-                <h4 className='text-4xl font-semibold'>
+            <div className='space-y-7 sm:space-y-10 px-0 md:px-10 -mt-50 sm:-mt-20 md:mt-0'>
+                <h4 className='text-2xl sm:text-4xl font-semibold'>
                     Here is a <span className='underline decoration-[#F7AB0A]/50'>little</span> background
                 </h4>
                 <p className='text-sm'>{pageInfo?.backgroundInformation}          </p>

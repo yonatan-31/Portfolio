@@ -11,7 +11,7 @@ type Props = {
 
 const Header = ({ socials }: Props) => {
   return (
-    <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center '>
+    <header className='sticky top-0 p-2 sm:p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center '>
       <motion.div
         initial={{
           x: -500,
@@ -33,6 +33,7 @@ const Header = ({ socials }: Props) => {
             url={social.url}
             fgColor='gray'
             bgColor='transparent'
+             className="!w-12 !h-12 sm:!w-15 sm:!h-15"
           />
         ))}
 
@@ -54,7 +55,7 @@ const Header = ({ socials }: Props) => {
             duration: 1.5,
           }}
           className='flex items-center  cursor-pointer'>
-          <div className=' hover:text-[#F7AB0A]/80 mr-2'>
+          <div className=' hover:text-[#F7AB0A]/80 mr-2 w-12 h-12 sm:w-15 sm:h-15 mt-2'>
             <FiMail size={28} />
           </div>
           <p className='uppercase text-sm text-gray-400 hidden md:inline-block hover:text-[#F7AB0A]/80'>Contact Me</p>
