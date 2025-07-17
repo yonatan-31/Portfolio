@@ -91,7 +91,7 @@ function Projects({ projects }: Props) {
                             <h4 className='text-3xl font-semibold text-center'>
                                 <span className=' underline decoration-[#F7AB0A]/50'>{project?.title}</span>
                             </h4>
-                            <div className='text-lg text-center md:text-left max-h-40 overflow-y-auto scrollbar-thin scrollbar-thumb-[#F7AB0A]/70 scrollbar-track-gray-400/20'>
+                            <div className='text-lg text-center md:text-left max-h-40 overflow-y-auto scrollbar-thin scrollbar-thumb-[#F7AB0A]/70 scrollbar-track-gray-400/20 mb-20'>
                                 {project?.summery}
                             </div>
                         </div>
