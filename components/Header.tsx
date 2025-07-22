@@ -33,7 +33,9 @@ const Header = ({ socials }: Props) => {
             url={social.url}
             fgColor='gray'
             bgColor='transparent'
-             className="!w-12 !h-12 sm:!w-15 sm:!h-15"
+            className="!w-12 !h-12 sm:!w-15 sm:!h-15"
+            target="_blank"
+            rel="noopener noreferrer" 
           />
         ))}
 
