@@ -48,7 +48,7 @@ function ContactMe() {
 
 
 
-                    <form onSubmit={handleSubmit(onSubmit)} className=' flex flex-col space-y-2  w-[80%] mx-auto mt-10 -mb-10'>
+                    <form onSubmit={handleSubmit(onSubmit)} className=' flex flex-col space-y-2  w-full mx-auto mt-10 -mb-10'>
                         <div className='flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0'>
                             <input  {...register("Name")} placeholder="Name" className="contactInput" type="text" />
                             <input  {...register("Email")} placeholder="Email" className="contactInput" type="email" />
