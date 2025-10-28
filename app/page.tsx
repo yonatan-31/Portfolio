@@ -25,7 +25,7 @@ export default async function Home() {
     <div className=" bg-[rgb(36,36,36)]  text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Header socials={socials} />
 
-      <section id="hero" className="snap-start mt-20">
+      <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo}/>
       </section>
 

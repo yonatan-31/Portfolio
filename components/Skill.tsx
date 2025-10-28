@@ -31,7 +31,7 @@ function Skill({ directionLeft, skill }: Props) {
                 alt="Description"
                 width={500}
                 height={300}
-                className='rounded-full border object-cover h-20 w-20 sm:h-24 sm:w-24 md:w-28 md:h-28  group-hover:grayscale transition duration-300 ease-in-out shadow-[0_0_5px_#F7AB0A]'
+                className='rounded-full border object-cover h-18 w-18 sm:h-20 sm:w-20 md:w-22 md:h-22  group-hover:grayscale transition duration-300 ease-in-out shadow-[0_0_5px_#F7AB0A]'
             />
             <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-20 w-20 sm:h-24 sm:w-24 md:w-28 md:h-28  rounded-full z-0'>
                 <div className='flex justify-center items-center h-full  '>

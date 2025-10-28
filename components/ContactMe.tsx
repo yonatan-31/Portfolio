@@ -26,24 +26,24 @@ function ContactMe() {
 
             <h3 className=' top-24 uppercase tracking-[15px] sm:tracking-[20px] text-gray-500 text-2xl'>Contact</h3>
 
-            <div className='flex flex-col justify-between space-y-12 '>
+            <div className='flex flex-col justify-between space-y-8 mb-10'>
                 <h4 className='text-xl md:text-3xl sm:text-2xl font-semibold text-center'>I have got just what you need. <span className='decoration-[#F7AB0A]/50 underline'>Let’s Talk</span></h4>
 
 
-                <div className='space-y-5 mb-5'>
-                    <div className='flex items-center space-x-5 justify-center'>
+                <div className='space-y-3 mb-5'>
+                    <div className='flex items-center space-x-3 justify-center'>
                         <PhoneIcon className='text-[#F7AB0A] h-5 w-5 md:h-7 md:w-7 ' />
-                        <p className='text-xl md:text-2xl'>0902354089</p>
+                        <p className='text-md md:text-xl'>0902354089</p>
                     </div>
 
-                    <div className='flex items-center space-x-5 justify-center'>
+                    <div className='flex items-center space-x-3 justify-center'>
                         <EnvelopeIcon className='text-[#F7AB0A] h-5 w-5 md:h-7 md:w-7 animate-pluse' />
-                        <p className='text-xl md:text-2xl'>yonatanasmare31@gmail.com</p>
+                        <p className='text-md md:text-xl'>yonatanasmare31@gmail.com</p>
                     </div>
 
-                    <div className='flex items-center space-x-5 justify-center'>
+                    <div className='flex items-center space-x-3 justify-center'>
                         <MapPinIcon className='text-[#F7AB0A] h-5 w-5 md:h-7 md:w-7 animate-pluse' />
-                        <p className='text-xl md:text-2xl'>Addis Ababa Ethiopia</p>
+                        <p className='text-md md:text-xl'>Addis Ababa Ethiopia</p>
                     </div>
 
 

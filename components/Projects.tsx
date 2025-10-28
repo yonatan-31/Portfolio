@@ -56,7 +56,7 @@ function Projects({ projects }: Props) {
                                 alt="Description"
                                 width={500}
                                 height={300}
-                                className='rounded-md w-[250px] sm:w-[350px] md:w-[450] lg:w-[500px]'
+                                className='rounded-md w-[250px] sm:w-[350px] lg:w-[400px]'
                             />
                             <ArrowRightIcon
                                 onClick={handleNext}
@@ -87,11 +87,11 @@ function Projects({ projects }: Props) {
                         )}
 
 
-                        <div className='space-y-5 px-0 md:px-10 max-w-6xl'>
+                        <div className='space-y-5 px-0 md:px-10 max-w-6xl mb-10'>
                             <h4 className='text-3xl font-semibold text-center'>
                                 <span className=' underline decoration-[#F7AB0A]/50'>{project?.title}</span>
                             </h4>
-                            <div className='text-lg text-center md:text-left max-h-40 overflow-y-auto scrollbar-thin scrollbar-thumb-[#F7AB0A]/70 scrollbar-track-gray-400/20 mb-20 z-30'>
+                            <div className='text-sm md:text-md lg:text-lg text-center md:text-left max-h-40 overflow-y-auto scrollbar-thin scrollbar-thumb-[#F7AB0A]/70 scrollbar-track-gray-400/20 mb-20 z-30'>
                                 {project?.summery}
                             </div>
                         </div>

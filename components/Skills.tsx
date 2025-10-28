@@ -30,16 +30,16 @@ function Skills({ skills }: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className="relative min-h-screen max-w-[2000px] mx-auto px-4 sm:px-8 xl:px-10 flex flex-col items-center justify-center text-center"
+            className="relative min-h-screen max-w-[2000px] mx-auto  px-4 sm:px-8 xl:px-10 flex flex-col items-center justify-center text-center"
         >
-            <div className="-mt-20 mb-10">
+            <div className=" mb-10">
                 <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">Skills</h3>
                 <h2 className="uppercase text-gray-500 text-sm tracking-[3px] mt-2">
                     Hover over a skill for current proficiency
                 </h2>
             </div>
    
-            <div className="grid grid-cols-3  gap-5 px-4 sm:px-10 w-full max-w-2xl ">
+            <div className="grid grid-cols-3 gap-3 md:gap-5 px-4 sm:px-10 w-full max-w-md md:max-w-xl ">
                 {skills.map((skill, i) => (
                     <Skill
                         key={skill?._id}
