@@ -39,15 +39,35 @@ function Skills({ skills }: Props) {
                 </h2>
             </div>
    
-            <div className="grid grid-cols-3 gap-3 md:gap-5 px-4 sm:px-10 w-full max-w-md md:max-w-xl ">
-                {skills.map((skill, i) => (
-                    <Skill
-                        key={skill?._id}
-                        directionLeft={i < directionThreshold}
-                        skill={skill}
-                    />
-                ))}
-            </div>
+
+
+            {skills.length > 15 ? (
+                <div className="flex overflow-x-scroll w-full snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 z-20">
+                    {Array.from({ length: Math.ceil(skills.length / 15) }).map((_, pageIndex) => (
+                         <div key={pageIndex} className="min-w-full flex-shrink-0 snap-center flex flex-col items-center justify-center h-full">
+                            <div className="grid grid-cols-3 gap-3 md:gap-5 px-4 sm:px-10 w-full max-w-md md:max-w-xl">
+                                {skills.slice(pageIndex * 15, (pageIndex + 1) * 15).map((skill, i) => (
+                                    <Skill
+                                        key={skill?._id}
+                                        directionLeft={i < directionThreshold}
+                                        skill={skill}
+                                    />
+                                ))}
+                            </div>
+                         </div>
+                    ))}
+                </div>
+            ) : (
+                <div className="grid grid-cols-3 gap-3 md:gap-5 px-4 sm:px-10 w-full max-w-md md:max-w-xl ">
+                    {skills.map((skill, i) => (
+                        <Skill
+                            key={skill?._id}
+                            directionLeft={i < directionThreshold}
+                            skill={skill}
+                        />
+                    ))}
+                </div>
+            )}
         </motion.div>
 
     )
